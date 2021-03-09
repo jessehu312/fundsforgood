@@ -3,7 +3,7 @@ const colors = require("tailwindcss/colors");
 module.exports = {
   purge: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
   presets: [],
-  darkMode: "class", // or 'media' or 'class'
+  darkMode: false, // or 'media' or 'class'
   theme: {
     screens: {
       sm: "640px",
@@ -15,7 +15,6 @@ module.exports = {
     colors: {
       transparent: "transparent",
       current: "currentColor",
-
       black: colors.black,
       white: colors.white,
       gray: colors.coolGray,
@@ -368,6 +367,7 @@ module.exports = {
       "3/6": "50%",
       "4/6": "66.666667%",
       "5/6": "83.333333%",
+      "screen-80": "80vh",
       full: "100%",
       screen: "100vh",
     }),
@@ -732,6 +732,17 @@ module.exports = {
       30: "30",
       40: "40",
       50: "50",
+    },
+    extend: {
+      backgroundImage: (theme) => ({
+        "hero-pattern": "url('/images/hero.png')",
+      }),
+      colors: {
+        primary: "#2DD2A1",
+      },
+      textColor: {
+        primary: "#2DD2A1",
+      },
     },
   },
   variantOrder: [
