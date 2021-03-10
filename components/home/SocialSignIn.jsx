@@ -15,7 +15,7 @@ const SocialSignIn = ({ setOpen }) => {
       transition={{ duration: 0.35 }}
       style={{ backgroundColor: "rgba(0,0,0,0.4)" }}
       className='fixed inset-0 z-50 overflow-auto h-screen w-full flex flex-row items-center justify-center md:px-0 px-12'>
-      <div className='z-20 bg-blue-600 shadow-lg rounded-sm relative p-4 w-full max-w-xs m-auto flex-col flex border-green-500 border-t-4 pb-8'>
+      <div className='z-20 bg-black shadow-lg rounded-sm relative p-4 w-full max-w-md m-auto flex-col flex border-green-500 border-t-4 pb-8'>
         <svg
           className='w-6 h-6 absolute top-4 right-4 text-gray-300 cursor-pointer'
           onClick={() => setOpen(false)}
@@ -31,17 +31,17 @@ const SocialSignIn = ({ setOpen }) => {
           />
         </svg>
         <div className='flex flex-col justify-center items-center w-full p-4'>
-          <div className='flex flex-row items-center space-x-2 pr-1'>
-            <Image src='/images/logo.png' alt='me' width='50' height='50' />
-            <h1 className='lg:ml-2 text-white font-bold text-3xl'>
-              Invest<span className='text-green-400'>X</span>
+          <div className='flex flex-col items-center space-x-2 pr-1'>
+            <Image src='/images/logo.png' alt='me' width='75' height='75' />
+            <h1 className='mt-4 lg:ml-2 uppercase font-bold text-primary text-3xl'>
+              Funds<span className='font-light'>For</span>Good
             </h1>
           </div>
           <p className='text-center text-md mt-4 text-white'>
-            Log in to get access to FundsForGood's custom dashboard
+            Log in to get access to your dashboard
           </p>
         </div>
-        <div className='mt-4 flex flex-col space-y-4 justify-center'>
+        <div className='mt-4 px-4 flex flex-col space-y-4 items-center justify-center'>
           <button
             onClick={() => auth.signInWithGoogle()}
             className='bg-white w-full flex flex-row justify-center items-center rounded shadow-sm transition duration-200 ease-in-out transform hover:-translate-y-1'>
