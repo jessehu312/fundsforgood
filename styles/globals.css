@@ -3,7 +3,8 @@
 @tailwind utilities;
 
 @layer components {
-  .bg-hero-pattern {
+  .bg-hero-pattern,
+  .bg-cta-pattern {
     @apply bg-center bg-cover;
   }
 }

@@ -736,9 +736,11 @@ module.exports = {
     extend: {
       backgroundImage: (theme) => ({
         "hero-pattern": "url('/images/hero.png')",
+        "cta-pattern": "url('/images/cta.png')",
       }),
       colors: {
         primary: "#2DD2A1",
+        "dark-gray": "#181B23",
       },
       textColor: {
         primary: "#2DD2A1",
