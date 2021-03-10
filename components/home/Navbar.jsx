@@ -50,12 +50,12 @@ const Navbar = () => {
         <div className='flex py-2 justify-between items-center'>
           <div className='flex flex-row items-center space-x-2'>
             <Image src='/images/logo.png' alt='me' width='50' height='50' />
-            <h1 className='lg:ml-2 text-white font-bold text-3xl'>
-              Invest<span className='text-green-400'>X</span>
+            <h1 className='lg:ml-2 uppercase font-bold text-primary text-3xl'>
+              Funds<span className='font-light'>For</span>Good
             </h1>
           </div>
-          <div className=' flex items-center'>
-            {show && (
+          <div className='flex items-center'>
+            {show ? (
               <ul
                 id='list'
                 className=' py-2 mx-8 border-r bg-white absolute rounded top-0 left-0 right-0 shadow mt-20 md:px-4 md:mt-20 z-20'>
@@ -78,8 +78,8 @@ const Navbar = () => {
                   </li>
                 )}
               </ul>
-            )}
-            <div className='xl:hidden ' onClick={() => setShow(!show)}>
+            ) : null}
+            <div className='xl:hidden ' onClick={() => setShow(false)}>
               {show ? (
                 <svg
                   className='text-white cursor-pointer'
@@ -98,7 +98,7 @@ const Navbar = () => {
                   <line x1={6} y1={6} x2={18} y2={18} />
                 </svg>
               ) : (
-                <div className=' close-m-menu' onClick='MenuHandler(false)'>
+                <div className='close-m-menu' onClick={() => setShow(true)}>
                   <svg
                     aria-haspopup='true'
                     aria-label='Main Menu'

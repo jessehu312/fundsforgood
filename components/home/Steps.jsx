@@ -6,7 +6,7 @@ const Steps = () => {
     {
       name: "Choose Impact Preference",
       desc:
-        "We scape articles from each company and analyze it for you using machine learning.",
+        " The user picks the impact that they want to focus on from the list of choices.",
       img: "idea.png",
     },
     {

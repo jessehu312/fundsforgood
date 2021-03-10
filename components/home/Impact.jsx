@@ -12,13 +12,13 @@ const Impact = () => {
     {
       name: "Climate",
       desc:
-        "With this option, you can invest in ETFs that support companies with lower carbon emissions and the funding of green projects.",
+        "Environment Funds  looks at the climate impact of the most popular mutual funds.",
       img: "climate.png",
     },
     {
       name: "Social",
       desc:
-        "This offering is based on Broad Impact and adds two funds that support minority empowerment and gender diversity.",
+        "Social funds look at the social impact of the most popular mutual funds.",
       img: "social.png",
     },
     {
