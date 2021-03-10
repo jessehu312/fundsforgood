@@ -6,7 +6,7 @@ const StepCard = ({ iter, name, desc, img }) => {
     <div className='relative text-center flex flex-col justify-center items-center'>
       <img className={`w-36 mx-auto`} src={`/images/${img}`} alt={name} />
       {iter < 2 && (
-        <div className='animate-pulse absolute top-1/3 -right-1/4'>
+        <div className='hidden md:block animate-pulse absolute top-1/3 -right-1/4'>
           <RightChevron />
         </div>
       )}
