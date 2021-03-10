@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { useRouter } from "next/router";
 
-const SidePanel = ({ auth, hScreen }) => {
+const SidePanel = ({ auth, hScreen, index }) => {
   const router = useRouter();
   return (
     <>
@@ -22,17 +22,23 @@ const SidePanel = ({ auth, hScreen }) => {
           <ul className='w-full'>
             <li
               onClick={() => router.push("/dashboard")}
-              className='hover:bg-primary py-6 text-center cursor-pointer text-white text-lg font-medium pr-4'>
+              className={`${
+                index === 0 && "bg-primary"
+              } hover:bg-primary py-6 text-center cursor-pointer text-white text-lg font-medium pr-4`}>
               Stocks
             </li>
             <li
               onClick={() => router.push("/trends")}
-              className='hover:bg-primary py-6 text-center cursor-pointer text-white text-lg font-medium pr-4'>
+              className={`${
+                index === 1 && "bg-primary"
+              } hover:bg-primary py-6 text-center cursor-pointer text-white text-lg font-medium pr-4`}>
               Trends
             </li>
             <li
               onClick={() => router.push("/preference")}
-              className='hover:bg-primary py-6 text-center cursor-pointer text-white text-lg font-medium pr-4'>
+              className={`${
+                index === 2 && "bg-primary"
+              } hover:bg-primary py-6 text-center cursor-pointer text-white text-lg font-medium pr-4`}>
               Preference
             </li>
             <li
@@ -56,7 +62,9 @@ const SidePanel = ({ auth, hScreen }) => {
           <ul className='w-full'>
             <li
               onClick={() => router.push("/dashboard")}
-              className='hover:bg-primary py-6 text-center cursor-pointer text-white text-lg font-medium flex justify-center'>
+              className={`${
+                index === 0 && "bg-primary"
+              } hover:bg-primary py-6 text-center cursor-pointer text-white text-lg font-medium flex justify-center`}>
               <svg
                 className='w-8 h-8 text-center'
                 xmlns='http://www.w3.org/2000/svg'
@@ -73,7 +81,9 @@ const SidePanel = ({ auth, hScreen }) => {
             </li>
             <li
               onClick={() => router.push("/trends")}
-              className='hover:bg-primary py-6 text-center cursor-pointer text-white text-lg font-medium flex justify-center'>
+              className={`${
+                index === 1 && "bg-primary"
+              } hover:bg-primary py-6 text-center cursor-pointer text-white text-lg font-medium flex justify-center`}>
               <svg
                 className='w-8 h-8 text-center'
                 xmlns='http://www.w3.org/2000/svg'
@@ -90,7 +100,9 @@ const SidePanel = ({ auth, hScreen }) => {
             </li>
             <li
               onClick={() => router.push("/preference")}
-              className='hover:bg-primary py-6 text-center cursor-pointer text-white text-lg font-medium flex justify-center'>
+              className={`${
+                index === 2 && "bg-primary"
+              } hover:bg-primary py-6 text-center cursor-pointer text-white text-lg font-medium flex justify-center`}>
               <svg
                 className='w-8 h-8 text-center'
                 viewBox='0 0 24 24'
