@@ -94,7 +94,7 @@ const StockChart = ({ selectedStock, stockName }) => {
       decimalSeparator: ".",
       showLabels: true,
       showTitle: true,
-      title: `InvestX ${selectedStock} Report`,
+      title: `FundsForGood ${selectedStock} Report`,
       useTextFile: false,
       useBom: true,
       useKeysAsHeaders: true,
