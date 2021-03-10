@@ -740,6 +740,7 @@ module.exports = {
       }),
       colors: {
         primary: "#2DD2A1",
+        secondary: "#0DA779",
         "dark-gray": "#181B23",
       },
       textColor: {
