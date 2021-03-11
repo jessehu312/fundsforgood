@@ -1,34 +1,57 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Inspiration
+With meme stocks taking over social media recently, many millenials have jumped into the world of finance without having much-investing experience. Millennials, as they care about making an impact, also want to know how they can invest sustainably. But as first-timers, they don’t know where to start and which company they should invest in.
 
-## Getting Started
+## What it does
+Introducing **Funds for Good**, a platform that allows millennials to easily find and invest in companies based on the issue they care about. We aggregate real-time stock data along with articles about the impacts a company has on the world to determine the metrics score based on their preference. So you can easily invest in companies that align with the causes you most care about, without sacrificing your
+performance goals.
 
-First, run the development server:
+![alt text](https://i.imgur.com/CPwk67X.jpg)
+![alt text](https://i.imgur.com/6dkeO2P.png)
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+## Features
+- Dynamically updated chart with the latest stock data
+- All the latest market data and ESG stats for the S&P500
+- Set your ESG preference on your profile
+- Pull articles for the company based on your ESG preference
+- Search for stocks across the market
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### ESG Dimensions
+- Environmental impact
+- Labor Practices
+- Social impact
+- Gender equality
+- Pay equality
+- Corporate activity impact
+- Public welfare score
+- Long term profitability
+- Short term profitability
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+### How we built it
+- Nextjs/React = FE
+- Serverless functions w/ Next = Part of the backend (firebase admin sdk)
+- TailwindCSS = Styling
+- Figma = Prototypes/Mockups/Designs
+- Firebase Auth = Authentication and Authorization (if we do a group buy)
+- Firebase Firestore and Datastax = Central Database
+- Flask Backend = Central Backend
+- Selenium = Web Scraping
+- Yarn
+- Alpaca for Market data, not alpha vantage or polygon.io
+- Refinitiv and RapidAPI for ESG data
+- newsapi.org
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## Challenges we ran into
+- Alphavantage rate-limiting so had to use alpaca
+- Polygon.io free API is only limit to 5
+- SearchAPI is only on alpha vantage
+- New to NextJS
+- News API Rate limiting
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Accomplishments that we're proud of
+Best project we've got so far in a hackathon.
 
-## Learn More
+## What we learned
+Learned a lot of new tech stacks
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## What's next for Funds for Good
+Adding a trading function, more impact categories, and links to government entities that regulate environment data.
