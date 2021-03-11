@@ -1,3 +1,5 @@
+![alt text](https://i.imgur.com/53xZf66.jpg)
+
 ## Inspiration
 With meme stocks taking over social media recently, many millenials have jumped into the world of finance without having much-investing experience. Millennials, as they care about making an impact, also want to know how they can invest sustainably. But as first-timers, they don’t know where to start and which company they should invest in.
 
